@@ -15,7 +15,7 @@
 }
 
 body, html {
-    background-color: #73369c;
+    background-color: var(--cor3--verdeescuro);
     height: 100vh;
     width: 100vw;
 }
@@ -46,14 +46,14 @@ section.login{
 section.login > div.imagem {
     display: block;
     background: var(--cor2--cinza) url(../Imagens/pexels-young-wang-2148945605-30353894.jpg) no-repeat;
-    height: 200px;
     background-size: cover;
     background-position: right top;
+    height: 200px;
 }
 
 section.login > div.formulario {
-    padding: 10px;
     display: block;
+    padding: 10px;
 }
 
 
@@ -64,5 +64,76 @@ div.formulario > h1 {
 
 div.formulario > p {
     font-size: 0.8em;
+}
 
+form > div.campo {
+    background-color: #518c80c7;
+    border: 2px solid #518c80c7;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: white;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    transform: translateY(-12px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: var(--cor3--verdeescuro);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor1--verdeclaro);
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: var(--cor3--verdeescuro);
+    color: white;
+    border: 1px solid;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: var(--cor1--verdeclaro);
+}
+
+form > a.botao > i {
+    font-size: 0.8em;
 }
